@@ -3,7 +3,7 @@
 <ul>
     @foreach ($recipes as $recipe)
         <li>
-            {{ $recipe->id }} - {{ $recipe->food_name }}
+            {{ $recipe->id }} - {{ $recipe->food_name }} | <a href="{{ route('recipes.edit', ['recipe' => $recipe->id]) }}">Editar</a>
         </li>
     @endforeach
 </ul>
