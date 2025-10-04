@@ -46,7 +46,8 @@ class RecipeController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $recipe = Recipe::findOrFail($id);
+        return view('recipes.edit', compact('recipe'));
     }
 
     /**
