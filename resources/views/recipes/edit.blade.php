@@ -4,7 +4,7 @@
     @method('PUT')
     <input type="text" name="food_name" placeholder="Insira o nome da comida" value="{{ $recipe->food_name }}">
     <br>
-    <textarea name="ingredients" placeholder="Insira os ingredientes">>{{ $recipe->ingredients }}</textarea>
+    <textarea name="ingredients" placeholder="Insira os ingredientes">{{ $recipe->ingredients }}</textarea>
     <br>
     <textarea name="instructions" placeholder="Insira o passo a passo">{{ $recipe->instructions }}</textarea>
     <br>
