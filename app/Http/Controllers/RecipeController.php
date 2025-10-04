@@ -57,7 +57,7 @@ class RecipeController extends Controller
     {
         $recipe = Recipe::findOrFail($id);
         $recipe->update($request->except('_token', '_method'));
-        return redirect()->route('recipe.index');
+        return redirect()->route('recipes.index');
     }
 
     /**
