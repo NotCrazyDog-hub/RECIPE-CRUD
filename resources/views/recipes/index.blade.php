@@ -1,3 +1,6 @@
+@extends('layouts.principal')
+
+@section('content')
 <h1>Lista de receitas</h1>
 <a href="{{ route('recipes.create') }}">+ Adicionar uma receita</a>
 <ul>
@@ -12,3 +15,4 @@
         </li>
     @endforeach
 </ul>
+@endsection
