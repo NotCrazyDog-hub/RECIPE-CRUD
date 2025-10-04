@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary {
+    background-color: #28a745;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.button-primary:hover {
+    background-color: #218838;
+}
+
+.button-edit {
+    background-color: #ffc107; 
+    color: #333;
+}
+
+.button-edit:hover {
+    background-color: #e0a800;
+}
+
+.button-delete {
+    background-color: #dc3545; 
+    color: white;
+}
+
+.button-delete:hover {
+    background-color: #c82333;
+}
+
+.recipe-list {
+    list-style: none;
+    padding: 0;
+}
+
+.recipe-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.recipe-info {
+    font-size: 1.1em;
+}
+
+.recipe-name {
+    font-weight: bold;
+}
+
+.recipe-id {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.recipe-actions {
+    display: flex;
+    gap: 10px; 
+}
+
+.delete-form {
+    display: inline; 
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
