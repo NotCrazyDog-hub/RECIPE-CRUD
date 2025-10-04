@@ -126,7 +126,7 @@ li:hover {
 }
 
 .button-show {
-    background-color: var(--color-info); 
+    background-color: var(--color-secondary); 
     color: white;
     text-decoration: none;
     padding: 7px 10px;
