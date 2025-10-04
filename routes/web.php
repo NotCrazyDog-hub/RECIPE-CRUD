@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/recipes', [RecipeController::class, 'index'])->name('recipes.index');
+Route::get('/recipes/create', [RecipeController::class, 'create'])->name('recipes.create');
