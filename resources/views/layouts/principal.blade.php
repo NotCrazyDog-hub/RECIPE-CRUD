@@ -9,9 +9,6 @@
 <body>
     <header>
         <h1>Gerenciador de Receitas</h1>
-        <nav>
-            <a href="{{ route('recipes.index') }}">Início</a>
-        </nav>
     </header>
 
     <main class="container">
