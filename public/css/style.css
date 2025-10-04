@@ -1,11 +1,13 @@
 :root {
     --color-primary: #8b4513; 
     --color-secondary: #f4a460; 
-    --color-background: #fdf5e6; 
+    --color-background: #fdf5e6;
     --color-text: #363636; 
-    --color-accent: #228b22; 
-    --font-heading: 'Playfair Display', serif; 
-    --font-body: 'Roboto', sans-serif; 
+    --color-accent: #228b22;
+    --color-danger: #dc3545;
+    --color-info: #007bff; 
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
 }
 
 body {
@@ -96,12 +98,12 @@ ul {
 
 li {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     padding: 12px 15px;
     border-bottom: 1px solid #e0e0e0;
     transition: background-color 0.2s;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 li:last-child {
@@ -112,15 +114,41 @@ li:hover {
     background-color: #fffaf0;
 }
 
+.recipe-display {
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.recipe-actions {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+}
+
+.button-show {
+    background-color: var(--color-info); 
+    color: white;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.button-show:hover {
+    background-color: #0056b3;
+}
+
 li a[href*="edit"] {
     color: var(--color-primary);
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 7px 10px;
     border: 1px solid var(--color-primary);
     border-radius: 3px;
     transition: background-color 0.3s, color 0.3s;
-    margin-right: 10px;
+    margin-right: 0; 
 }
 
 li a[href*="edit"]:hover {
@@ -134,7 +162,7 @@ form {
 }
 
 input[type="submit"] {
-    background-color: #dc3545; 
+    background-color: var(--color-danger); 
     color: white;
     border: none;
     padding: 7px 10px;
