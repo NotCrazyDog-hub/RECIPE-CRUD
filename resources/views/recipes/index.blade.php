@@ -3,15 +3,22 @@
 @section('content')
 <h1>Lista de receitas</h1>
 <a href="{{ route('recipes.create') }}">+ Adicionar uma receita</a>
-<ul>
+<ul class="recipe-list">
     @foreach ($recipes as $recipe)
         <li>
-            {{ $recipe->id }} - {{ $recipe->food_name }} | <a href="{{ route('recipes.edit', ['recipe' => $recipe->id]) }}">Editar</a> |
-            <form action="{{ route('recipes.destroy', ['recipe' => $recipe->id]) }}" method="post">
-                @csrf
-                @method('DELETE')
-                <input type="submit" onclick="return confirm('Tem certeza em deletar esta receita de sua lista?')" value="Deletar">
-            </form>
+            <span class="recipe-display">
+                #{{ $recipe->id }}: {{ $recipe->food_name }}
+            </span>
+            <div class="recipe-actions">
+
+                <a href="{{ route('recipes.edit', ['recipe' => $recipe->id]) }}" class="button button-edit">>Editar</a>
+                <a href="{{ route('recipes.edit', ['recipe' => $recipe->id]) }}" class="button button-show">Visualizar detalhes</a>
+                <form action="{{ route('recipes.destroy', ['recipe' => $recipe->id]) }}" method="post" class="delete-form">
+                    @csrf
+                    @method('DELETE')
+                    <input type="submit" onclick="return confirm('Tem certeza em deletar esta receita de sua lista?')" class="button button-delete" value="Deletar">
+                </form>
+            </div>
         </li>
     @endforeach
 </ul>
