@@ -1,5 +1,5 @@
 <h1>Editar uma receita</h1>
-<form action="{{ route('recipes.update', ['recipe' => $recipe-id]) }}" method="post">
+<form action="{{ route('recipes.update', ['recipe' => $recipe->id]) }}" method="post">
     @csrf
     @method('PUT')
     <input type="text" name="food_name" placeholder="Insira o nome da comida" value="{{ $recipe->food_name }}">
