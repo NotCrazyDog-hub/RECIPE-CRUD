@@ -38,7 +38,8 @@ class RecipeController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $recipe = Recipe::findOrFail($id);
+        return view('recipes.edit', compact('recipe'));
     }
 
     /**
