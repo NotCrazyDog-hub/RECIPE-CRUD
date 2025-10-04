@@ -11,8 +11,8 @@
             </span>
             <div class="recipe-actions">
 
-                <a href="{{ route('recipes.edit', ['recipe' => $recipe->id]) }}" class="button button-edit">Editar</a>
-                <a href="{{ route('recipes.show', ['recipe' => $recipe->id]) }}" class="button button-show">Visualizar detalhes</a>
+                <a href="{{ route('recipes.edit', ['recipe' => $recipe->id]) }}">Editar</a>
+                <a href="{{ route('recipes.show', ['recipe' => $recipe->id]) }}">Visualizar detalhes</a>
                 <form action="{{ route('recipes.destroy', ['recipe' => $recipe->id]) }}" method="post" class="delete-form">
                     @csrf
                     @method('DELETE')
