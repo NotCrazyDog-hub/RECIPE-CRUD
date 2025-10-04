@@ -5,7 +5,7 @@
         <li>
             {{ $recipe->id }} - {{ $recipe->food_name }} | <a href="{{ route('recipes.edit', ['recipe' => $recipe->id]) }}">Editar</a> |
             <form action="{{ route('recipes.destroy', ['recipe' => $recipe->id]) }}" method="post">
-                @csrft
+                @csrf
                 @method('DELETE')
                 <input type="submit" onclick="return confirm('Tem certeza em deletar esta receita de sua lista?')" value="Deletar">
             </form>
