@@ -1,3 +1,6 @@
+@extends('layouts.formularios')
+
+@section('content')
 <h1>Editar uma receita</h1>
 <form action="{{ route('recipes.update', ['recipe' => $recipe->id]) }}" method="post">
     @csrf
@@ -12,3 +15,4 @@
     <br>
     <input type="submit" value="Atualizar receita">
 </form>
+@endsection

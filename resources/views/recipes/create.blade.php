@@ -1,3 +1,6 @@
+@extends('layouts.formularios')
+
+@section('content')
 <h1>Adicionar uma receita</h1>
 <form action="{{ route('recipes.store') }}" method="post">
     @csrf
@@ -11,3 +14,4 @@
     <br>
     <input type="submit" value="Adicionar receita">
 </form>
+@endsection
