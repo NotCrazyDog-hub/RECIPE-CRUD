@@ -1,0 +1,145 @@
+:root {
+    --color-primary: #8b4513; 
+    --color-secondary: #f4a460;
+    --color-background: #fdf5e6;
+    --color-text: #363636;
+    --color-accent: #228b22;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.kitchen-header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kitchen-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2em;
+    margin: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.kitchen-main {
+    padding: 40px 0; 
+}
+
+.recipe-container {
+    background-color: white; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-container h1 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    border-bottom: 2px dashed var(--color-secondary);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    padding: 30px;
+    background-color: white; 
+    border: 1px solid var(--color-secondary); 
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--color-primary); 
+    margin-top: 5px; 
+    font-size: 0.95em;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: var(--color-secondary); 
+    box-shadow: 0 0 0 2px rgba(244, 164, 96, 0.2); 
+    outline: none;
+}
+
+textarea {
+    min-height: 120px; 
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: var(--color-accent); 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+.kitchen-footer {
+    background-color: #ded1c1;
+    color: var(--color-text);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    border-top: 1px solid #ccc;
+}
